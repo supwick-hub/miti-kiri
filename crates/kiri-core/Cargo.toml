@@ -1,0 +1,20 @@
+[package]
+name = "kiri-core"
+version = "1.0.0"
+description = "The core under miti-kiri: decode, FFT, windowing, the STFT stage, the network backend interface and Core ML"
+edition.workspace = true
+authors.workspace = true
+homepage.workspace = true
+repository.workspace = true
+license = "MIT"
+publish.workspace = true
+
+[dependencies]
+anyhow.workspace = true
+rustfft.workspace = true
+
+[target.'cfg(target_os = "macos")'.dependencies]
+objc2 = "0.6"
+block2 = "0.6"
+objc2-foundation = { version = "0.3", features = ["NSArray", "NSDictionary", "NSString", "NSURL", "NSError", "NSValue", "NSObject", "NSEnumerator"] }
+objc2-core-ml = { version = "0.3", features = ["MLModel", "MLModelConfiguration", "MLMultiArray", "MLFeatureProvider", "MLDictionaryFeatureProvider", "MLFeatureValue", "MLPredictionOptions"] }

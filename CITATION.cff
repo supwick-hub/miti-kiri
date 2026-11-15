@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "miti-kiri: four-stem music separation on the Mac's GPU"
+version: 1.0.0
+authors:
+  - family-names: Wickrematillake
+    given-names: Supriya
+    email: sup@terrific.life
+url: "https://kiri.terrific.life/"
+repository-code: "https://github.com/supwick-hub/miti-kiri"
+license: MIT
+keywords:
+  - music source separation
+  - stems
+  - Core ML
+  - DJ software

@@ -1,0 +1,22 @@
+[package]
+name = "miti-kiri"
+version = "1.0.0"
+description = "Stem separation on Core ML: windows, the network, overlap-add, consistency, stem writing"
+edition.workspace = true
+authors.workspace = true
+homepage.workspace = true
+repository.workspace = true
+license = "MIT"
+publish.workspace = true
+
+[[bin]]
+name = "miti-kiri"
+path = "src/main.rs"
+
+[dependencies]
+kiri-core.workspace = true
+anyhow.workspace = true
+clap.workspace = true
+
+[dev-dependencies]
+serde_json.workspace = true
