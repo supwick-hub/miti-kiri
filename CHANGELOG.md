@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- README and model card: measured peak memory (about 300 MB at any track length, 3 to 60 minutes).
+
 ## 1.0.0 (2026-10-19)
 
 First release of the runtime in its own repository, with the 1.0 model.

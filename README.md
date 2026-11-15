@@ -5,6 +5,8 @@ By Supriya Wickrematillake. Part of the kiri family: [kiri.terrific.life](https:
 Splits a song into drums, bass, other and vocals on the Mac's GPU. Rust, no Python at runtime; the only
 external program is `ffmpeg`, which decodes anything that is not already a WAV. This repository holds the
 runtime and the 1.0 model. A 5-minute track takes 11 to 18 s, depending on what else the Mac is doing.
+Memory stays at about 300 MB whatever the track's length: 223 to 303 MB measured on tracks of 3 to 60 minutes
+(M1 MacBook Air, 8 GB).
 
 | | |
 |---|---|

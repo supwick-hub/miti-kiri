@@ -13,6 +13,7 @@ Splits stereo music into four stems: drums, bass, other, vocals.
 | Parameters | 4.67 M (plain); 4.28 M (folded) |
 | Files | `model/miti-kiri-1.0.mlmodelc` (9.4 MB, fp16, Core ML); `model/miti-kiri-1.0-fold.mlmodelc` (8.7 MB) |
 | Runs on | the Mac's GPU through Core ML (the Neural Engine is not used; see the README) |
+| Memory | about 300 MB at any track length (peak footprint 223 to 303 MB on tracks of 3 to 60 minutes, M1 MacBook Air 8 GB) |
 
 **The folded variant** is the same network with one repeated fusion step in the decoder folded into its weights:
 the same function with half the multiply-adds. Against the plain export it agrees to 65.6 dB (fp16 rounding;
